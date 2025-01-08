@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Ramchandra Patade</a>
+    </div>
+
+    <div class="right">
+      <a href="https://github.com/rbpatade98" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/ramchandra-patade/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="rbpatade98@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-envelope" ></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Ramchandra 👋</h2>
+        <p>Hello! I'm Ramchandra Patade, a passionate web developer specializing in creating engaging and user-friendly web applications. With a strong foundation in HTML, CSS, JavaScript, and a keen eye for design, I aim to build websites that are both functional and aesthetically pleasing. I'm constantly exploring new technologies to improve my skills and deliver high-quality work.</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+          <a href="#project">
+            <i class="fa-solid fa-pen"></i>
+            <span>Project</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="hero.jpeg" alt="profile">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        Skilled in HTML, CSS, Bootstrap, JavaScript, and React.js, I specialize in creating responsive and dynamic web applications. With a focus on clean design and efficient functionality, I leverage modern frameworks and best practices to develop user-friendly interfaces that deliver seamless experiences across various devices and platforms.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+
+         
+        <div class="cell">
+          <img width="200" height="200" src="https://img.icons8.com/color-glass/100/bootstrap.png" alt="bootstrap"/>
+          <span>Bootstrap</span>
+        </div>
+        
+        <div class="cell">
+          <img src="javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        
+        
+        <div class="cell">
+          <img src="react-logo.webp" alt="react logo">
+          <span>React.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Project -->
+    <section id="project" class="project-section">
+      <h2>Project</h2>
+      <div class="project">
+        <h2>Portfolio Website</h2>
+        <p>A responsive portfolio website showcasing my work and skills.</p>
+        <a href="https://github.com/rbpatade98/Portfolio" target="_blank">View Code</a>
+    </div >
+    <div class="project">
+        <h2>lenskart Clone</h2>
+        <p> Developed a Lenskart clone using HTML and CSS, featuring product, login, signin, aboutus, and contactus.</p>
+        <a href="https://github.com/yourusername/todolist" target="_blank">View Code</a>
+    </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          If you have any questions, collaboration ideas, or just want to say hi, feel free to reach out! I'd love to hear from you and will get back to you as soon as possible
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
