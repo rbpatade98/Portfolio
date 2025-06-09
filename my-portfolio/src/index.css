@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #4f46e5;       /* Indigo-600 */
+  --secondary-color: #6366f1;     /* Indigo-500 */
+  --accent-color: #fbbf24;        /* Amber-400 */
+  --background-color: #f3f4f6;    /* Gray-100 */
+  --text-color: #1f2937;          /* Gray-800 */
+  --light-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+.navbar {
+  background-color: var(--light-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+button.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+button.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Light mode colors */
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #222222;
+  --nav-bg: #ffffff;
+  --card-bg: #ffffff;
+  --btn-bg: #0d6efd;
+  --btn-text: #ffffff;
+  --link-color: #0d6efd;
+  --link-hover: #084298;
+}
+
+/* Dark mode overrides */
+.dark {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --nav-bg: #1f1f1f;
+  --card-bg: #242424;
+  --btn-bg: #0d6efd;
+  --btn-text: #ffffff;
+  --link-color: #66aaff;
+  --link-hover: #aaddff;
+}
+
+/* Apply colors */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav.navbar {
+  background-color: var(--nav-bg);
+  transition: background-color 0.3s ease;
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a, .nav-link, span.nav-link {
+  color: var(--link-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+a:hover, .nav-link:hover, span.nav-link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+
+
+
+.section {
+  padding: 4rem 0;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
